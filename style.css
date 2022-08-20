@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#3e8ef7d2, #f05ed0f1);
+  }
+  .toDoList{
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 25px;
+  }
+  .heading {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    width: 400px;
+    background-color: aliceblue;
+    border-radius: 10px;
+  }
+  .head {
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+    height: 35px;
+  }
+  input{
+    padding: 5px;
+  }
+  .enteredText {
+    width: 220px;
+  }
+  input[type="text"]::placeholder {  
+    font-weight: 700;
+} 
+  .addButton {
+    width: 50px;
+    background-color: rgba(255, 0, 0, 0.753);
+    color: white;
+    /* border: solid black ; */
+  }
+  .tasks{
+    margin: auto;
+    width: 90%;
+    margin-top: 10px;
+  }
+  .inputs{
+    padding: 7px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .btns{
+    display: flex;
+    gap: 10px;
+  }
+  i{
+    font-size: 20px;
+  }
+  .line-through p{
+    text-decoration: line-through;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .top{
+        height: 80px;
+        width: 220px;
+      }
+      .head {
+        width: 200px;
+        height: 25px;
+      }
+      .heading {
+        margin-bottom: 10px;
+      }
+      .enteredText {
+        width: 145px;
+      }
+      .addButton {
+        width: 35px;
+      }
+      .inputs{
+        height: 15px;
+      }
+  }
